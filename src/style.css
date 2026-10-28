@@ -26,3 +26,5 @@ main { position:relative; z-index:2; max-width:40rem; margin:0 auto; padding:.7r
 .slider input { width:100%; accent-color:var(--rose); }
 .bar button { font:inherit; font-weight:700; border:0; border-radius:12px; padding:.6rem 1rem; background:rgba(244,240,236,.92); color:var(--ink); }
 body.inar .top, body.inar main { display:none; }
+#overlay > .hint { pointer-events:none; }
+body:not(.inar) .hint { top:auto; bottom:calc(max(.8rem, env(safe-area-inset-bottom)) + 4.5rem); }
